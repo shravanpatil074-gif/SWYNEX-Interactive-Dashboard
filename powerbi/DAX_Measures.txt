@@ -1,0 +1,30 @@
+SWYNEX Task 3 - Power BI DAX Measures
+
+Table name: cleaned_titanic_dashboard
+
+Total Passengers =
+COUNTROWS(cleaned_titanic_dashboard)
+
+Survivors =
+CALCULATE(
+    COUNTROWS(cleaned_titanic_dashboard),
+    cleaned_titanic_dashboard[Survived] = 1
+)
+
+Survival Rate =
+DIVIDE([Survivors], [Total Passengers], 0)
+
+Average Age =
+AVERAGE(cleaned_titanic_dashboard[Age])
+
+Average Fare =
+AVERAGE(cleaned_titanic_dashboard[Fare])
+
+Average Family Size =
+AVERAGE(cleaned_titanic_dashboard[Family_Size])
+
+Formatting:
+- Survival Rate: Percentage, 2 decimals
+- Average Age: Decimal number, 2 decimals
+- Average Fare: Decimal number, 2 decimals
+- Average Family Size: Decimal number, 2 decimals

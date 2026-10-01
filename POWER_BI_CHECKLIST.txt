@@ -1,0 +1,12 @@
+TASK 3 POWER BI CHECKLIST
+
+[ ] Import cleaned_titanic_dashboard.csv
+[ ] Create 5 KPI cards
+[ ] Create 6 charts
+[ ] Add 4 slicers
+[ ] Test slicer interactions
+[ ] Format percentage and numeric measures
+[ ] Add clear dashboard title
+[ ] Save as SWYNEX_Interactive_Dashboard.pbix
+[ ] Upload PBIX to GitHub if file size permits
+[ ] Submit GitHub repository link in SWYNEX Task 3
